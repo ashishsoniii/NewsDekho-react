@@ -160,6 +160,7 @@ export class NewsComponent extends Component {
                     })}
                 </div>
                 <div className="d-flex justify-content-between">
+                    {/* Previous and Next Button  */}
                     <button disabled={this.state.page <= 1} type="button" className="btn btn-dark" onClick={this.handlePrevclick}>&larr; previous</button>
                     <button disabled={this.state.page >= Math.ceil(this.state.totalResults / this.props.pageSize)} type="button" className="btn btn-dark" onClick={this.handleNextclick} >Next &rarr; </button>
 
